@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="190dp"
+        android:layout_marginEnd="270dp"
+        android:layout_marginRight="270dp"
+        android:text="닉네임"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="비밀번호"
+        app:layout_constraintEnd_toEndOf="@+id/textView32"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="출생년도"
+        app:layout_constraintEnd_toEndOf="@+id/textView33"
+        app:layout_constraintStart_toStartOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="성별"
+        app:layout_constraintEnd_toEndOf="@+id/textView34"
+        app:layout_constraintStart_toStartOf="@+id/textView34"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="AMADO탈퇴"
+        app:layout_constraintEnd_toEndOf="@+id/textView35"
+        app:layout_constraintStart_toStartOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <ImageView
+        android:id="@+id/Myinfo_Nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView32"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toTopOf="@+id/textView32"
+        app:srcCompat="@drawable/submenusettingdp" />
+
+    <ImageView
+        android:id="@+id/Myinfo_Withdrawal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView36"
+        app:layout_constraintStart_toEndOf="@+id/textView36"
+        app:layout_constraintTop_toTopOf="@+id/textView36"
+        app:srcCompat="@drawable/submenusettingdp" />
+
+    <ImageView
+        android:id="@+id/Myinfo_Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView35"
+        app:layout_constraintStart_toEndOf="@+id/textView35"
+        app:layout_constraintTop_toTopOf="@+id/textView35"
+        app:srcCompat="@drawable/submenusettingdp" />
+
+    <ImageView
+        android:id="@+id/Myinfo_Birtday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView34"
+        app:layout_constraintStart_toEndOf="@+id/textView34"
+        app:layout_constraintTop_toTopOf="@+id/textView34"
+        app:srcCompat="@drawable/submenusettingdp" />
+
+    <ImageView
+        android:id="@+id/Myinfo_Pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="230dp"
+        android:layout_marginLeft="230dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView33"
+        app:layout_constraintStart_toEndOf="@+id/textView33"
+        app:layout_constraintTop_toTopOf="@+id/textView33"
+        app:srcCompat="@drawable/submenusettingdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

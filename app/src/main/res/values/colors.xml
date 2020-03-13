@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#E91E63</color>
+    <color name="color1">#FAA2C3</color>
+    <color name="color2">#F3588E</color>
+    <color name="color3">#00BCD4</color>
+    <color name="color4">#009688</color>
+    <color name="color5">#2FBDA8</color>
+    <color name="color6">#AAAAE7</color>
+    <color name="color7">#57EC57</color>
+    <color name="color8">#F0C53E</color>
+    <color name="color9">#B87C24</color>
+    <color name="color10">#FA9A07</color>
+    <color name="White">#ffffff</color>
+    <color name="Black">#000000</color>
+    <color name="Red">#ff0000</color>
+
+    <!--  AMADO 메인 색상  -->
+    <color name="ToolBarColor">#000000</color>
+    <color name="MainBackColor">#333333</color>
+    <color name="tab_selected_color">#ffffff</color>
+    <color name="tab_unselected_color">#000000</color>
+
+    <!--  Spinner 색상  -->
+    <color name="SpinnerBaseColor">#80333333</color>
+</resources>

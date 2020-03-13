@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Genre">
+        <item></item>
+        <item>발라드/R&amp;B/Soul</item>
+        <item>랩/힙합</item>
+        <item>댄스</item>
+        <item>트로트</item>
+        <item>인디음악</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="HDWM">
+        <item>실시간</item>
+        <item>일간</item>
+        <item>주간</item>
+        <item>월간</item>
+    </string-array>
+</resources>

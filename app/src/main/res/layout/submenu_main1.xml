@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#999999"
+    android:layout_height="match_parent">
+
+
+    <ExpandableListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#999999"
+        android:divider="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Sub_Menu_Background" />
+
+    <ImageView
+        android:id="@+id/Sub_Menu_Background"
+        android:layout_width="363dp"
+        android:layout_height="278dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/border" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Sub_Menu_Profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="233dp"
+        android:src="@drawable/nonprofile_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Sub_Menu_Background"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="233dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="120dp"
+        android:text="로그인 해주세요"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        app:layout_constraintStart_toEndOf="@+id/Sub_Menu_Profile"
+        app:layout_constraintTop_toTopOf="@+id/Sub_Menu_Background"
+        android:layout_marginLeft="15dp" />
+
+    <Button
+        android:id="@+id/Sub_Menu_LoginBtn"
+        android:layout_width="111dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="로그인 | 회원가입"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/Sub_Menu_Profile"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="290dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/go_back"
+        android:layout_marginLeft="290dp"
+        android:layout_marginRight="17dp" />
+
+    <ImageButton
+        android:id="@+id/SubMenu_Upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/upload"
+        android:layout_marginLeft="164dp"
+        android:layout_marginRight="96dp" />
+
+    <TextView
+        android:id="@+id/SubMenu_Setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="환경설정"
+        android:textSize="14dp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@+id/SubMenu_Upload"
+        app:layout_constraintStart_toEndOf="@+id/SubMenu_Upload"
+        app:layout_constraintTop_toTopOf="@+id/SubMenu_Upload"
+        android:layout_marginLeft="15dp" />
+
+    <Button
+        android:id="@+id/Sub_Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        app:layout_constraintEnd_toEndOf="@+id/Sub_Menu_LoginBtn"
+        app:layout_constraintStart_toStartOf="@+id/Sub_Menu_LoginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/Sub_Menu_LoginBtn" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Sub_Menu_Profile_Befor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/nonprofile_img"
+        android:visibility="gone"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/mylist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

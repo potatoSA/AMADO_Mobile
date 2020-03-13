@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 메인 커뮤니티 탭 리스트 화면_김선아 -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/CmLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Main_ivCmImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/chart_img"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Main_tvCmName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="22dp"
+                android:adjustViewBounds="true"
+                android:fontFamily="sans-serif-light"
+                android:includeFontPadding="false"
+                android:text="tjsdk11"
+                android:textColor="#cc000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Main_tvCmInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:fontFamily="sans-serif-light"
+                android:includeFontPadding="false"
+                android:text="디자인은 동사와 명사로 함께 쓰일 수 ..."
+                android:textColor="#cc000000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Sub_Menu_Background"
+        android:layout_width="11dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginRight="42dp"
+        android:layout_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_01" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ff0000">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="약관동의"
+            android:textSize="30dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/Agree01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="180dp"
+            android:text="이용약관동의" />
+
+        <Button
+            android:id="@+id/Agree01_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="180dp"
+            android:text="약관보기" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/Agree02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:text="개인정보취급약관 동의" />
+        <Button
+            android:id="@+id/Agree02_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="약관보기" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#ff0000"
+        android:layout_marginTop="10dp"/>
+
+    <CheckBox
+        android:id="@+id/Agree03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:text="전체 동의" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="다음 단계"
+        android:layout_gravity="center"
+        android:id="@+id/NextBtn"
+        android:layout_margin="80dp"/>
+
+</LinearLayout>

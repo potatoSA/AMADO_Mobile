@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ssongtech.android.amado">
+
+
+    <!-- 카메라 권한 추가 -->
+    <!-- 사진을 외부 저장소(SD Card)에 저장할 수 있도록 외부 저장소 write permission 설정 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <!-- intent로 불러올 기본 camera feature 설정 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <!-- 읽기, 쓰기, 인터넷 외부 저장소 권한 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- 오디오 녹음 권한 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!--  스트리밍 권한  -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- 위치 권한 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Needed only if your app targets Android 5.0 (API level 21) or higher. -->
+    <uses-feature android:name="android.hardware.location.gps" />
+
+
+    <application
+        android:installLocation="auto"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher_ssong_round"
+        android:label=""
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SubMenu.SubMenu_Main"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SubMenu.Sb_MyPage.MyPage_Main"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Function.PhotoPermission.PhotoPermission"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SubMenu.Sb_MyPage.My_Album.Album_Manager"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SubMenu.Sb_Myinfo.Myinfo_Nick"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SubMenu.Sb_MusicUp.MusicUp_Main"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SubMenu.Sb_Menu_Setting.SubMenu_Setting"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".HeadMenu.Hd_Find.Find_Main"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".HeadMenu.Hd_Ticket.Ticket_Main"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".HeadMenu.Hd_Login.Login.Login_Main"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Function.Check.Login_Check"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Main2Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".HeadMenu.Hd_Login.Join.Local.Local_Email"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".HeadMenu.Hd_Login.Join.Sns.Sns_Genre"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".HeadMenu.Hd_Login.Agree.Agr_Main"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".HeadMenu.Hd_Login.Agree.AgrView_001"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".HeadMenu.Hd_Login.Agree.AgrView_002"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".HeadMenu.Hd_Login.Join.Sns.Sns_Join"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".HeadMenu.Hd_Login.Join.Sns.Sns_Birthday"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".HeadMenu.Hd_Login.Join.Local.Local_Nick"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".HeadMenu.Hd_Login.Join.Local.Local_Birthday"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".HeadMenu.Hd_Login.Join.Local.Local_Genre"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Home.Logo"/>
+        <activity android:name=".HeadMenu.Hd_Login.Login.Login_pwsch"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".SsongChart.SS_Amado.AmadoChart_Main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SubMenu.Sb_Myinfo.Myinfo_Pw"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SubMenu.Sb_Myinfo.Myinfo_Withdrawal"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SubMenu.Expand.SubMenu_Main1"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SubMenu.Sb_Myinfo.SubMenu_Set_Myinfo"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SubMenu.Sb_Myinfo.Myinfo_Birtday"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SubMenu.Sb_Myinfo.Myinfo_Gender"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SubMenu.Sb_Myinfo.Myinfo_Logincheck"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SubMenu.Sb_Menu_Setting.SubMenu_Version"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".SubMenu.Community.Community_Board"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <!-- OS 누가 버전 이상 사진 촬영을 위한 provide -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="ssongtech.android.amado.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <!-- FACEBOOK 로그인 -->
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity" android:configChanges= "keyboard|keyboardHidden|screenLayout|screenSize|orientation" android:label="@string/app_name" />
+        <activity android:name="com.facebook.CustomTabActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Music2 SlidingView 화면_김선아 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="155dp"
+    android:layout_height="210dp"
+    android:layout_marginEnd="9dp"
+    android:layout_marginRight="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="155dp"
+        android:layout_height="210dp"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="#333333"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="1dp"
+        app:cardMaxElevation="2dp"
+        app:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Main_ivMusic2"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/Main_tvMusicInfo_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Main_ivMusic2"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="7dp"
+                android:autoSizeMaxTextSize="15sp"
+                android:autoSizeMinTextSize="8sp"
+                android:includeFontPadding="false"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="여행의 설렘을 담은 음악"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Main_tvMusicName_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Main_tvMusicInfo_2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="false"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-light"
+                android:includeFontPadding="false"
+                android:text="볼빨간 사춘기"
+                android:textColor="#b3ffffff"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

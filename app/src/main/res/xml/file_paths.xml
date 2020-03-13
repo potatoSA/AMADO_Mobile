@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 외부 저장소의 경우 external-path를 사용하면 외부 저장소
+     루트 하위에 있는 파일들의 Uri를 만들 수 있다_20200204_김선아 -->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="hidden" path="/Pictures" />
+</paths>

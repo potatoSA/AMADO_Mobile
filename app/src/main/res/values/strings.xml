@@ -1,0 +1,117 @@
+<resources>
+    <!-- 경로 Values_김선아 -->
+    <string name="app_name">AMADO</string>
+    <string name="IP_ADRESS">http://192.168.0.100</string>
+    <string name="FD_MYIMAGE">/news/upload/</string>
+    <string name="FD_MSFILE">/news/MS_upload/</string>
+    <string name="FD_SERVER">/androidServer/</string>
+    <string name="FD_UPLOAD">/news/</string>
+    <string name="ANDROID_INFO_PATH">/homepage/mobile/android/info/</string>
+    <string name="ANDROID_UP_PATH">/homepage/mobile/android/upload/</string>
+    <string name="SSONG_MYPAGEIMG_PATH">/homepage/data/file/mypage/</string>
+    <string name="SSONG_MUSICPHOTO_PATH">/homepage/data/file/music_photo/</string>
+    <string name="SSONG_DEFAULTIMG_PATH">/homepage/data/file/default/Ssong_DefaultImage.jpg</string>
+    <string name="SSONG_MUSICCHART_PATH">/homepage/mobile/chart/</string>
+
+    <!--로그인 관련 php-->
+    <string name="LOCAL_EMAIL_CHECK">http://192.168.0.100/homepage/mobile/check_mobileid.php</string>
+    <string name="LOCAL_JOIN">http://192.168.0.100/homepage/mobile/join_mobile.php</string>
+    <string name="Pwsch_check_mobilepw">http://192.168.0.100/homepage//mobile/check_mobilepw.php</string>
+    <string name="login_mobile_check">http://192.168.0.100//homepage/mobile/login_mobile_check.php</string>
+    <string name="login_mobile">http://192.168.0.100//homepage/mobile/login_mobile.php</string>
+
+    <!-- 텍스트 Values -->
+    <string name="tab_text_1">전체</string>
+    <string name="tab_text_2">전체차트</string>
+    <string name="tab_text_3">장르차트</string>
+    <string name="tab_text_4">게시판</string>
+    <string name="tab_text_5">가이드</string>
+    <string name="profile_name">이름</string>
+    <string name="Si_Id_Sucess_Error">이미 등록한 아이디 입니다</string>
+    <string name="Si_Email_check">이메일 형태가 아닙니다 다시 확인하세요</string>
+    <string name="Agree_sucess">약관을 체크해주세요</string>
+    <string name="Lg_Restart">다시 로그인 해주세요</string>
+    <string name="Lg_Idpw_err">아이디 비밀번호가 틀렸습니다</string>
+
+    <!-- Ted Permission_김선아 -->
+    <string name="permission_1">[설정] > [권한] 에서 권한을 허용할 수 있습니다.</string>
+    <string name="permission_2">파일을 저장하기 위하여 접근 권한이 필요합니다.</string>
+    <string name="channel_name">channel_name</string>
+    <string name="channel_description">channel_description</string>
+
+
+    <!-- 페이스북 api -->
+    <string name="facebook_app_id">170652137705680</string>
+    <string name="fb_login_protocol_scheme">fb170652137705680</string>
+
+
+    <!-- 로그인 -->
+    <string name="Error">어플리케이션을 재부팅 해주세요 더욱 노력하겠습니다.</string>
+
+
+    <!-- 경고창-->
+    <string name="Pleasewait">죄송합니다 잠시 후 다시 시도해 주세요</string>
+    <string name="Join_Success">회원가입을 축하 합니다</string>
+    <string name="Birtday_up">미래에서 오셨습니까?</string>
+    <string name="Birtday_down">정말이세요?</string>
+    <string name="Men">남성</string>
+    <string name="Female">여성</string>
+    <string name="unresponsive">무응답</string>
+    <string name="Pwsch_Error">로 임시 비밀번호가 전송 되었습니다</string>
+    <string name="Sever_Error">서버의 일시적인 오류로인해 전송에 실패하였습니다. 잠시 후 다시시도해주세요</string>
+    <string name="Pwsch_EamilError">입력하신 아이디를 찾을 수 없습니다</string>
+    <string name="Null">아이디,비밀번호를 다시 확인하여 주세요</string>
+    <string name="Email_Check">이메일 인증 후 이용해 주시기 바랍니다</string>
+    <string name="secession">탈퇴 회원입니다</string>
+    <string name="Member_Exist">이미 회원가입 된 계정입니다." +"\n"+ "홈페이지에서 계정 연동 해주세요</string>
+    <string name="Pw_Err">비밀번호가 올바르지 않습니다.</string>
+    <string name="Pw_Err2">비밀번호 형식이 다릅니다</string>
+    <string name="Email_Err">이메일 형식이 아닙니다</string>
+
+    <!--loginCode-->
+    <string name="Gender_001">001</string>
+    <string name="Gender_002">002</string>
+    <string name="Gender_003">003</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="Mone">-1</string>
+    <string name="OneHundred_One">101</string>
+    <string name="OneHundred_Two">102</string>
+    <string name="OneHundred_Three">103</string>
+    <string name="OneHundred_Four">104</string>
+    <string name="OneHundred_Five">105</string>
+    <string name="OneHundred_Seven">107</string>
+    <string name="OneHundred_Eight">108</string>
+    <string name="OneHundred_Nine">109</string>
+    <string name="OneHundred_Eleven">111</string>
+    <string name="OneHundred_twelve">112</string>
+    <string name="TwoHundred_One">201</string>
+    <string name="TwoHundred_Two">202</string>
+    <string name="TwoHundred_Three">203</string>
+
+
+    <!--확인-->
+    <string name="Success">확인</string>
+    <!--naver-->
+    <string name="OAUTH_CLIENT_ID">Ra8aLvUW7Ck50gONq_ut</string>
+    <string name="OAUTH_CLIENT_SECRET">N0M9Vhp19o</string>
+    <string name="OAUTH_CLIENT_NAME">쏭테크</string>
+    <!--스크롤 컨트롤_김선아-->
+    <string name="appbar_scrolling_view_behavior" translatable="false">
+        com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior
+    </string>
+
+    <!--멘트-->
+    <string name="Loginmain"> AMADO의 제품 및 서비스에 대한 업데이트 및 팀,활동알림을 위해 이메일 및 장치를 사용할 수 있습니다. 알림설정에서 언제든지 무료로 구독을 취소 할 수 있습니다.</string>
+    <string name="Login_Pwsch">회원가입시 입력했던 ID(이메일주소)를입력하시면 임시비밀번호 변경 링크를 보내드립니다.</string>
+    <string name="Login_Main_Text">당사는 개인 정보 보호 정책에 설명 된대로 타켓팅 된 광고를 표시하기 위해 귀하가 제공 한 정보를 사용 할수 있습니다.</string>
+    <!--클릭 링크-->
+    <string name="Link_Text">개인 정보 보호 정책</string>
+    <!--약관링크-->
+    <string name="Link">http://naver.com</string>
+    <!--provider-->
+    <string name="naver">naver</string>
+    <string name="facebook">facebook</string>
+    <string name="google">google</string>
+</resources>
+

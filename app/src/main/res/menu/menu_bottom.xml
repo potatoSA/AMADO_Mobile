@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/BottomHome"
+        android:checked="true"
+        android:enabled="true"
+        android:icon="@drawable/bottom_icon_01"
+        android:title="홈"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/BottomCommu"
+        android:enabled="true"
+        android:icon="@drawable/bottom_icon_02"
+        android:title="커뮤니티"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/BottomFind"
+        android:enabled="true"
+        android:icon="@drawable/bottom_icon_01"
+        android:title="검색"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/BottomLike"
+        android:enabled="true"
+        android:icon="@drawable/bottom_icon_04"
+        android:title="검색"
+        app:showAsAction="always" />
+</menu>

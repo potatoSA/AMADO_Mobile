@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!-- SSONG 실시간 전체 차트 레이아웃_김선아 -->
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/MainBackColor">
+
+        <Spinner
+            android:id="@+id/SS_spHDWM"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="35dp"
+            android:background="@null"
+            android:dropDownWidth="600dp"
+            android:gravity="center"
+            android:overlapAnchor="false"
+            android:popupBackground="@color/SpinnerBaseColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ListView
+            android:id="@+id/SS_lvAmadoChart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SS_spHDWM" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1500dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

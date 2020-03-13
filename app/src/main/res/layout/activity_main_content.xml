@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Main의 기본적인 본문이 들어갈 레이아웃_김선아 -->
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/MainBackColor"
+        tools:context=".MainActivity_amado">
+
+        <ImageView
+            android:id="@+id/Main_ivVisual"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/main_visual"
+            app:layout_collapseMode="parallax"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Main_tvGenre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="장르별 골라듣기!!"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_ivVisual" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/GenreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="21dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_tvGenre" />
+
+        <TextView
+            android:id="@+id/Main_tvTopChart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="AMADO 차트"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/GenreRecyclerView" />
+
+        <ListView
+            android:id="@+id/Main_lvTopChart"
+            android:layout_width="match_parent"
+            android:layout_height="337dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_tvTopChart" />
+
+        <ImageView
+            android:id="@+id/TopChart_ViewMore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/android_view_more"
+            app:layout_constraintStart_toEndOf="@+id/Main_tvTopChart"
+            app:layout_constraintTop_toTopOf="@+id/Main_tvTopChart" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/Main_BannerCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_lvTopChart">
+
+            <ViewFlipper
+                android:id="@+id/Main_viBannerLipper"
+                android:layout_width="match_parent"
+                android:layout_height="65dp" />
+        </androidx.cardview.widget.CardView>
+
+        <include
+            layout="@layout/activity_main_content2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="39dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_BannerCard" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="201dp"
+            android:layout_marginLeft="201dp"
+            android:layout_marginTop="2700dp"
+            android:text="TextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/Main_ivVisual" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

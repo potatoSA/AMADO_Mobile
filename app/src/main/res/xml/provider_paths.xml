@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 안드로이드 OS 누가 버전 이후부터는 file:// URI 의 노출을 금지하고 있다.
+     만약 URI 를 그냥 사용하게 되면 FileUriExposedException 발생하게 되기 때문에
+     FileProvider 을 통해 URI를 감싸주면 된다_20200205_김선아 -->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="storage/emulated" path="."/>
+</paths>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 부메뉴 > 마이페이지_김선아_202001 -->
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SubMenu.Sb_MusicUp.MusicUp_Main"
+    tools:ignore="ContentDescription"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/My_Swipe"
+                android:layout_width="fill_parent"
+                android:layout_height="986dp"
+                android:layout_centerInParent="true"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </androidx.viewpager.widget.ViewPager>
+
+            <ImageView
+                android:id="@+id/My_ivView_bg"
+                android:layout_width="720dp"
+                android:layout_height="299dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/background_img"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintDimensionRatio="1:9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/My_ivView_pro"
+                android:layout_width="202dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="200dp"
+                android:src="@drawable/nonprofile_img"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/My_ivView_bg"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/My_ivView_bg" />
+
+            <ImageView
+                android:id="@+id/My_ivUpload_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@android:drawable/ic_menu_upload_you_tube"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/My_ivView_bg" />
+
+            <ImageView
+                android:id="@+id/My_ivUpload_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginLeft="115dp"
+                android:src="@android:drawable/ic_menu_upload_you_tube"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/My_ivView_pro"
+                app:layout_constraintEnd_toEndOf="@+id/My_ivView_pro"
+                app:layout_constraintHorizontal_bias="0.37"
+                app:layout_constraintStart_toEndOf="@+id/My_ivCarmera_pro"
+                app:layout_constraintStart_toStartOf="@+id/My_ivView_pro"
+                app:layout_constraintTop_toTopOf="@+id/My_ivView_pro"
+                app:layout_constraintVertical_bias="0.928" />
+
+            <ImageView
+                android:id="@+id/My_ivCarmera_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/My_ivView_bg" />
+
+            <ImageView
+                android:id="@+id/My_ivGallery_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@android:drawable/ic_menu_gallery"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintStart_toEndOf="@+id/My_ivCarmera_bg"
+                app:layout_constraintTop_toTopOf="@+id/My_ivView_bg" />
+
+            <ImageView
+                android:id="@+id/My_ivCarmera_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/My_ivView_pro"
+                app:layout_constraintEnd_toEndOf="@+id/My_ivView_pro"
+                app:layout_constraintHorizontal_bias="0.3"
+                app:layout_constraintStart_toStartOf="@+id/My_ivView_pro"
+                app:layout_constraintTop_toTopOf="@+id/My_ivView_pro"
+                app:layout_constraintVertical_bias="0.928" />
+
+            <ImageView
+                android:id="@+id/My_ivGallery_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_gallery"
+                app:layout_constrainedHeight="true"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/My_ivView_pro"
+                app:layout_constraintEnd_toEndOf="@+id/My_ivView_pro"
+                app:layout_constraintHorizontal_bias="0.55"
+                app:layout_constraintStart_toStartOf="@+id/My_ivView_pro"
+                app:layout_constraintTop_toTopOf="@+id/My_ivView_pro"
+                app:layout_constraintVertical_bias="0.928" />
+
+            <ImageView
+                android:id="@+id/My_Profile_up"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/My_Swipe"
+                app:srcCompat="@drawable/change"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/My_Profile_cancel"
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_marginTop="350dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                app:layout_constraintEnd_toEndOf="@+id/indicator"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/cancel"
+                tools:ignore="VectorDrawableCompat" />
+
+
+            <com.viewpagerindicator.CirclePageIndicator
+                android:id="@+id/indicator"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="100dp"
+                android:gravity="bottom"
+                android:padding="10dip"
+                app:centered="true"
+                app:fillColor="#df0623"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/My_ivView_pro"
+                app:pageColor="#fff"
+                app:snap="false" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

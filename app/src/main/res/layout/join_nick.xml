@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginLeft="129dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/l_amado_logo" />
+
+    <TextView
+        android:id="@+id/Nick_Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="14dp"
+        android:textColor="@color/Black"
+        android:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginRight="216dp"
+        android:textSize="14sp"
+        android:textColor="@color/Black"
+        android:text="아티스트명(닉네임)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nick_Text" />
+
+    <EditText
+        android:id="@+id/Local_Nick"
+        android:layout_width="320dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        android:maxLength="15"
+        android:fontFamily="sans-serif-light"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:text="앞으로 모든 활동 시 표시되는 아티스트 명입니다"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Local_Nick" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:fontFamily="sans-serif-condensed-light"
+        android:textSize="14dp"
+        android:textColor="@color/Black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/Local_NickErr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff0000"
+        android:layout_marginTop="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+
+    <ImageView
+        android:id="@+id/imageView715"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26"
+        app:srcCompat="@drawable/ic_star_black_24dp" />
+
+    <ImageView
+        android:id="@+id/Local_NextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:srcCompat="@drawable/login_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

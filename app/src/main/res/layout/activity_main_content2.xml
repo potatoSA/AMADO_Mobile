@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="app:">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/MainBackColor">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="커뮤니티 HOT TOP 5"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/Community_ViewMore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/android_view_more"
+            app:layout_constraintStart_toEndOf="@+id/textView15"
+            app:layout_constraintTop_toTopOf="@+id/textView15" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/Main_CommuTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            android:background="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15"
+            app:tabBackground="@drawable/selector"
+            app:tabGravity="fill"
+            app:tabIndicator="@color/colorPrimary"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="#000000"
+            app:tabTextAppearance="@style/TabText"
+            app:tabTextColor="#ffffff" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/Main_CommuViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="369dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginRight="19dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_CommuTabLayout" />
+
+        <TextView
+            android:id="@+id/Main_tvMusicTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="들려주고 싶어서"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_CommuViewPager" />
+
+        <ImageView
+            android:id="@+id/Music1_ViewMore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/android_view_more"
+            app:layout_constraintStart_toEndOf="@+id/Main_tvMusicTitle1"
+            app:layout_constraintTop_toTopOf="@+id/Main_tvMusicTitle1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MusicRecyclerView_1"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_tvMusicTitle1" />
+
+        <TextView
+            android:id="@+id/Main_tvMusicTitle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="니가 좋아할까봐"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MusicRecyclerView_1" />
+
+        <ImageView
+            android:id="@+id/Music2_ViewMore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/android_view_more"
+            app:layout_constraintStart_toEndOf="@+id/Main_tvMusicTitle2"
+            app:layout_constraintTop_toTopOf="@+id/Main_tvMusicTitle2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MusicRecyclerView_2"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_tvMusicTitle2" />
+
+        <TextView
+            android:id="@+id/Main_tvMusicTitle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="39dp"
+            android:fontFamily="sans-serif-black"
+            android:includeFontPadding="false"
+            android:text="들려주고 싶어서"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MusicRecyclerView_2" />
+
+        <ImageView
+            android:id="@+id/Music3_ViewMore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/android_view_more"
+            app:layout_constraintStart_toEndOf="@+id/Main_tvMusicTitle3"
+            app:layout_constraintTop_toTopOf="@+id/Main_tvMusicTitle3" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/MusicRecyclerView_3"
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Main_tvMusicTitle3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

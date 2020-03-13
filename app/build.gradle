@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "ssongtech.android.amado"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            clean
+        }
+    }
+    compileOptions {
+        targetCompatibility = 1.8
+        sourceCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha03' // design
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+
+    implementation 'gun0912.ted:tedpermission:2.2.3'    // 권한 허용 체크 여부 사용
+    //implementation 'com.karumi:dexter:4.2.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.3.1'
+    implementation files('libs/PhotoUtil.jar')      // 카메라 사용에 필요한 파일
+    implementation files('libs/GenAsync.1.2.jar')   // 이미지 업로드에 필요한 파일
+
+    implementation 'de.hdodenhof:circleimageview:3.0.1' // Circleimageview  변환 이미지 위젯 추가
+
+    // 이미지 URL로 슬라이드
+    implementation 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.11.0' // Glide
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'androidx.cardview:cardview:1.0.0'   // CardView
+
+    implementation 'com.android.volley:volley:1.1.1'    // 앱의 네트워킹을 보다 쉽고 빠르게 만들어주는 HTTP 라이브러리
+
+    implementation 'com.borjabravo:readmoretextview:2.0.1'  // ReadMore
+
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'  // 구글
+
+    implementation ('com.naver.nid:naveridlogin-android-sdk:4.2.6')     // 네이버 로그인
+
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'    // 페이스북 로그인
+
+    /* 메인 레이아웃 작업 진행 */
+    implementation 'com.ssomai:android.scalablelayout:2.1.6'
+
+    //recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview-selection:1.1.0-alpha06'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.navigation:navigation-fragment:2.0.0'
+    implementation 'androidx.navigation:navigation-ui:2.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    // Retrofit2 사용
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.google.code.gson:gson:2.7'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

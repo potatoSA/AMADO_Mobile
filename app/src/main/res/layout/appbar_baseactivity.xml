@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 메인 AppBar_김선아 -->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Main_ToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ToolBarColor"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:fitsSystemWindows="true">
+
+            <TextView
+                android:id="@+id/Main_ToolBar_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="top"
+                android:includeFontPadding="false"
+                android:text="AMADO"
+                android:textColor="#ffffff"
+                android:textSize="32sp"
+                android:textStyle="italic" />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Main_BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@color/ToolBarColor"
+        app:itemBackground="@color/ToolBarColor"
+        app:itemIconTint="@drawable/item_color"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/menu_bottom" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
